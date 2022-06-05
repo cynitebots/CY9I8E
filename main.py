@@ -28,7 +28,7 @@ async def start_handler(_, event: Message):
 	await event.reply_photo("https://telegra.ph/file/51c625c24c1640963e879.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-                                    [InlineKeyboardButton("'⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚", url="http://t.me/CynitemdiskBoT?startgroup=true")],
+                                    [InlineKeyboardButton("'⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚", url="http://t.me/Mdisksearch_robot?startgroup=true")],
                                     [InlineKeyboardButton("🔮ᴏᴜʀ ᴄʜᴀɴɴᴇʟ🔮", url="https://t.me/Cynitemovies"),
                                      InlineKeyboardButton("👥ᴏᴜʀ ɢʀᴏᴜᴘ👥", url="https://t.me/CyniteMoviesGroup")],
                                     [InlineKeyboardButton("💠ʜᴇʟᴘ", callback_data="Help_msg"),
