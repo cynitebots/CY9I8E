@@ -25,23 +25,23 @@ User = Client(
 
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
-	await event.reply_photo("https://telegra.ph/file/165941ae764a56d6d9c89.jpg",
+	await event.reply_photo("https://telegra.ph/file/90687a45c08f28709ea59.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
                                     [InlineKeyboardButton("'⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚", url="http://t.me/CynitemdiskBoT?startgroup=true")],
-                                    [InlineKeyboardButton("Our Channel", url="https://t.me/Cynitemovies"),
-                                     InlineKeyboardButton("Our Group", url="https://t.me/CyniteMoviesGroup")],
-                                    [InlineKeyboardButton("Help", callback_data="Help_msg"),
-                                     InlineKeyboardButton("About", callback_data="About_msg")]]))
+                                    [InlineKeyboardButton("🔮ᴏᴜʀ ᴄʜᴀɴɴᴇʟ🔮", url="https://t.me/Cynitemovies"),
+                                     InlineKeyboardButton("👥ᴏᴜʀ ɢʀᴏᴜᴘ👥", url="https://t.me/CyniteMoviesGroup")],
+                                    [InlineKeyboardButton("💠ʜᴇʟᴘ", callback_data="Help_msg"),
+                                     InlineKeyboardButton("🔰ᴀʙᴏᴜᴛ", callback_data="About_msg")]]))
 
 @Bot.on_message(filters.private & filters.command("help"))
 async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Our Channel", url="https://t.me/CyniteMovies"),
-             InlineKeyboardButton("Our Group", url="https://t.me/CynitemoviesGroup"), 
-             InlineKeyboardButton("About", callback_data="About_msg")]
+            [InlineKeyboardButton("🔮ᴏᴜʀ ᴄʜᴀɴɴᴇʟ🔮", url="https://t.me/CyniteMovies"),
+             InlineKeyboardButton("👥ᴏᴜʀ ɢʀᴏᴜᴘ👥", url="https://t.me/CynitemoviesGroup"), 
+             InlineKeyboardButton("🔰ᴀʙᴏᴜᴛ", callback_data="About_msg")]
         ])
     )
 
@@ -78,12 +78,12 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Our Channel", url="https://t.me/Cynitemovies"),
-						InlineKeyboardButton("Our Group", url="https://t.me/CyniteMoviesGroup")
+						InlineKeyboardButton("🔮ᴏᴜʀ ᴄʜᴀɴɴᴇʟ🔮", url="https://t.me/Cynitemovies"),
+						InlineKeyboardButton("👥ᴏᴜʀ ɢʀᴏᴜᴘ👥", url="https://t.me/CyniteMoviesGroup")
 					],
 					[
-						InlineKeyboardButton("Developer", url="https://t.me/teamx69"),
-						InlineKeyboardButton("Home", callback_data="gohome")
+						InlineKeyboardButton("💻ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/teamx69"),
+						InlineKeyboardButton("🏠ʜᴏᴍᴇ", callback_data="gohome")
 					]
 				]
 			),
@@ -96,12 +96,12 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("About", callback_data="About_msg"),
-						InlineKeyboardButton("Our Channel", url="https://t.me/Cynitemovies")
+						InlineKeyboardButton("🔰ᴀʙᴏᴜᴛ", callback_data="About_msg"),
+						InlineKeyboardButton("🔮ᴏᴜʀ ᴄʜᴀɴɴᴇʟ🔮", url="https://t.me/Cynitemovies")
 					], 
                                         [
-						InlineKeyboardButton("Owner", url="https://t.me/teamx69"),
-						InlineKeyboardButton("Home", callback_data="gohome")
+						InlineKeyboardButton("🗣️Owner", url="https://t.me/teamx69"),
+						InlineKeyboardButton("🏠ʜᴏᴍᴇ", callback_data="gohome")
 					]
 				]
 			),
@@ -114,12 +114,12 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
                                         [
-						InlineKeyboardButton("Help", callback_data="Help_msg"),
-						InlineKeyboardButton("About", callback_data="About_msg")
+						InlineKeyboardButton("💠ʜᴇʟᴘ", callback_data="Help_msg"),
+						InlineKeyboardButton("🔰ᴀʙᴏᴜᴛ", callback_data="About_msg")
 					],
 					[
-						InlineKeyboardButton("Support", url="https://t.me/teamx69"),
-						InlineKeyboardButton("Channel", url="https://t.me/cynitemovies")
+						InlineKeyboardButton("📞sᴜᴘᴘᴏʀᴛ", url="https://t.me/teamx69"),
+						InlineKeyboardButton("🔮ᴏᴜʀ ᴄʜᴀɴɴᴇʟ🔮", url="https://t.me/cynitemovies")
 					]
 				]
 			),
