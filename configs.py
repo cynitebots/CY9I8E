@@ -23,10 +23,10 @@ class Config(object):
 
 📡 Server: <a href='https://heroku.com'>Heroku</a>
 
-👨‍💻 Created By: <a href='https://t.me/Harman'>@Teamx69</a></b>
+👨‍💻 Created By: <a href='https://t.me/teamx69'>@Harman</a></b>
 """
 
-    ABOUT_HELP_TEXT = """<b>👨‍💻 Developer : <a href='https://t.me/Harman'>@Teamx69</a>
+    ABOUT_HELP_TEXT = """<b>👨‍💻 Developer : <a href='https://t.me/teamx69'>@Harman</a>
 
 If You Want Your Own Bot Like This Then You Can Contact Our Developer.</b>
 """
