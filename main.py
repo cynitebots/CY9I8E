@@ -28,6 +28,7 @@ async def start_handler(_, event: Message):
 	await event.reply_photo("https://telegra.ph/file/165941ae764a56d6d9c89.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
+                                    [InlineKeyboardButton("'⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚", url="http://t.me/CynitemdiskBoT?startgroup=true")],
                                     [InlineKeyboardButton("Our Channel", url="https://t.me/Cynitemovies"),
                                      InlineKeyboardButton("Our Group", url="https://t.me/CyniteMoviesGroup")],
                                     [InlineKeyboardButton("Help", callback_data="Help_msg"),
